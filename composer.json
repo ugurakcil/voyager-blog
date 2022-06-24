@@ -1,0 +1,43 @@
+{
+    "name": "ugurakcil/voyager-blog",
+    "description": "A Laravel Blog package that includes Laravel-Voyager bugfixes and enhancements",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uğur AKÇIL",
+            "email": "ugurakcil@gmail.com"
+        }
+    ],
+    "keywords": [
+        "blog",
+        "booster",
+        "laravel",
+        "package",
+        "voyager",
+        "crm",
+        "admin"
+    ],
+    "require": {
+        "php": "^8.0",
+        "psr/container": "^1.0",
+        "tcg/voyager": "^1.5",
+        "ugurakcil/voyager-booster": "^0.0.7"
+    },
+    "require-dev": {
+        "laravel/framework": "^9.2"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+      "laravel": {
+        "providers": [
+           "UgurAkcil\\VoyagerBlog\\VoyagerBlogServiceProvider"
+        ]
+      }
+    },
+    "autoload": {
+        "psr-4": {
+           "UgurAkcil\\VoyagerBlog\\": "src/"
+        }
+    }
+}
